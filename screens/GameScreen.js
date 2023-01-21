@@ -96,7 +96,7 @@ function GameScreen({ userNumber, onGameOver }) {
             renderItem={(itemData) => (
               <GuessLogItem
                 roundNumber={guessRoundsListLength - itemData.index}
-                guess={itemData.data}
+                guess={itemData.item}
               />
             )}
             keyExtractor={(item) => item}
